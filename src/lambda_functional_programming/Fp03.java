@@ -34,6 +34,9 @@ public class Fp03 {
         //baslangiciAyadaSonuNolaniSil(liste);
         //baslangiciAyadaSonuNolaniSil02(liste);
         //uzunlugu8ile10arasiveOIleBitenSil(liste);
+        System.out.println("uzunlugu12denAzMi(liste) = " + uzunlugu12denAzMi(liste));
+        System.out.println("xIleBasliyorMu(liste) = " + xIleBaslamiyorMu(liste));
+        System.out.println("rIleBitebVarMi(liste) = " + rIleBitebVarMi(liste));
     }
 
     //1) Tüm elemanları büyük harf ile yazdıran bir method oluşturun.
@@ -112,6 +115,23 @@ public class Fp03 {
         list.removeIf(t->(t.length()>7 && t.length()<11)|| t.endsWith("o"));
         System.out.println(list); //[Ali, Ali, Mark, Amanda, Christopher, Jackson, Tucker]
     }
+    //9) Tüm elemanların uzunluklarının 12'den az olup olmadığını kontrol eden bir method oluşturun
 
      */
+    public static boolean uzunlugu12denAzMi(List<String> list){
+        return list.stream().allMatch(t->t.length()<12);
+        //uzunlugu12denAzMi(liste) = true
+        //allMatch hepsini bu sarti sagliyorsa, anyMatch herhangi biri uyusuyorsa, noneMatch hicbiri eslesmiyorsa,
+    }
+    //10) Hiçbir elemanın 'X' ile başlamadığını kontrol eden bir method oluşturun.
+    public static boolean xIleBaslamiyorMu(List<String> list){
+
+        return list.stream().noneMatch(t->t.startsWith("X"));//xIleBaslamiyorMu(liste) = true
+    }
+    //11) Herhangi bir elemanın 'r' ile bitip bitmediğini kontrol eden bir method oluşturun.
+    public static boolean rIleBitebVarMi(List<String> liste) {
+        //rIleBitebVarMi(liste) = true
+        return liste.stream().anyMatch(t->t.endsWith("r") ||t.endsWith("R"));
+    }
+
 }
