@@ -1,7 +1,10 @@
 package day28_staticBlock;
 
+import java.util.Scanner;
+
 public class C01_StaticBlock {
     static int sayi;
+    // static Scanner scan; /bu sekilde de olusturabilirsin.
     static {
         /*
         Static block class uyelerinin tamamindan once calisir
@@ -16,6 +19,7 @@ public class C01_StaticBlock {
         birden fazla static block varsa, yukaridan asagi dogru calisir */
         System.out.println("static blok calisti");
         sayi=10;
+        //scan=new Scanner(System.in);
     }
     public static void main(String[] args) {
         System.out.println("Main method calisti");

@@ -5,7 +5,7 @@ public class C01 {
     int rakam=5; // instence dir obje olarak bir kutunun icnne yazarim 5 rakamini
 
     public static void main(String[] args) {
-        /*
+        /* static:sabit, duragan demektir.
          class level'da iki tur variable olusturabiliriz
           static (class) variable
           instance (obje) variable
