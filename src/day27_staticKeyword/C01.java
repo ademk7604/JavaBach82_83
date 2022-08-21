@@ -19,6 +19,8 @@ public class C01 {
         static variable'lar class variable'i oldugu icin
         herhangi bir satirda static variable'in degerini bulmak icin
        CLASSIN BASINDAN itibaren kod incelenmelidir.
+       //bir veriable yanlizce obje olusturularak ulasilabiliyorsa instance variable'dir.
+       // static variable lara direk ulasilir, ayni zamanda obje araciligi ile de ulasilabiliyor.'
 
          */
         C01 obj1= new C01();
@@ -43,6 +45,7 @@ public class C01 {
         System.out.println("1 arttirdiktan sonra obj2' in sayi degeri : " + obj2.sayi); // 12
         // objeye bagli olan deger ler obje ile dogar yasar olurler
         // class a bagli olan degerler class ile dogar yasar ve olurler.
+        System.out.println(C01.sayi);
 
 
 
