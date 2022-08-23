@@ -1,6 +1,8 @@
 package lambda_functional_programming.lambda_parctice;
+import lambda_functional_programming.selbpractice.MethodlarimSelbst;
+
 import java.util.*;
-import java.util.stream.Collectors;
+
 public class Lambda01 {//okul projesinde listele vb lamda expression ile yapiniz
     static ArrayList<String> names = new ArrayList<>(
             Arrays.asList("Tulay", "zekeriya", "hasan", "ismail", "osman", "fatih","Ersin","Mevlit"));
@@ -57,11 +59,53 @@ public class Lambda01 {//okul projesinde listele vb lamda expression ile yapiniz
         //lambda expression ile
         System.out.println("sayilar.stream().reduce(1,(a,b)-> a*b) = " +
                 sayilar.stream()
-                        .filter(Methodlarim::ciftElemanlariSec)//method ref kullanildi kendi class imizda
+                        .filter(MethodlarimSelbst::ciftElemanlariSec)//method ref kullanildi kendi class imizda
                         // create ettigimiz seed methodu kulandik
                         .reduce(1, (a, b) -> a * b));
         //method referans ile
-        System.out.println(sayilar.stream().filter(Methodlarim::ciftElemanlariSec)
+        System.out.println(sayilar.stream().filter(MethodlarimSelbst::ciftElemanlariSec)
                 .reduce(Math::multiplyExact));
+    }
+    //TODO task tek lerin karesini buyukten kucuge
+    public static void teklerinKareBuyuktenKucuge(List<Integer> sayi) {
+    }
+    // Task : List elemanlarini alafabetik buyuk harf ve  tekrarsiz print ediniz.
+    public static void alfabetikBuyukHarfTekrarsiz(List<String> yemek) {
+    }
+    // Task : list elelmanlarinin character sayisini ters sirali olarak tekrarsiz print ediniz..
+    public static void strKarakterSayisiYazdir(List<String> yemek) {
+    }
+    // Task :TODO list elemanlarinin son harfine gore ters sirali print ediniz.
+    public static void sonHarfeGoreTersSira(List<String> yemek) {
+    }
+    // Task : listin elemanlarin karakterlerinin cift sayili  karelerini hesaplayan,ve karelerini tekrarsiz
+    // buyukten kucuge sirali  print ediniz..
+    public static void karakterCiftKareBuyuktenKucuge(List<String> yemek) {
+    }
+    // TODO Task : List elelmmalarinin karakter sayisini 7 ve 7 'den az olma durumunu kontrol ediniz.
+    public static void karakterSayiYedidenBuyuk(List<String> yemek) {
+    }
+    //anyMatch() --> enaz bir eleman sarti saglarsa true aksi durumda false return eder
+    //allMatch() --> tum  elemanlar sarti saglarsa true en az bir eleman sarti saglamazsa false return eder.
+    //noneMatch() --> hic bir sarti SAGLAMAZSA true en az bir eleman sarti SAGLARSA false return eder.
+    // Task : List elelmanlarinin "W" ile baslamasını kontrol ediniz.
+    public static void basHarfiWIleBaslayan(List<String> yemek) {
+    }
+    // TODO Task : List elelmanlarinin "x" ile biten en az bir elemaı kontrol ediniz.
+    public static void xIleBitenEleman(List<String> yemek) {
+    }
+    // TODO Task : Karakter sayisi en buyuk elemani yazdiriniz.
+    public static void karkterEnFazla(List<String> yemek) {
+        //limit(1) => Sınırlandırma demek. Bu akışın elemanlarından oluşan, uzunluğu maxSize'dan uzun olmayacak
+        // şekilde kesilmiş bir akış return eder. Stream return eder.
+    }
+    /*
+TRİCK : •    Stream'ler ekrana direk yazdırılamaz. Stream'i toArray() ile Array'e çeviririz.
+Array'i de Arrays.toString() 'in içine alıp yazdırabiliriz.
+•  Ör; System.out.println(Arrays.toString(***.toArray())); veya System.out.println(Arrays.asList(***.toArray()));
+kullanılabilir.
+*/
+    //TODO Task : list elemanlarini son harfine göre siralayıp ilk eleman hariç kalan elemanlari print ediniz.
+    public static void sonHarfeGoreSiralaIlkHaricElmanlariYaz(List<String> yemek) {
     }
 }
