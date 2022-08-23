@@ -57,11 +57,11 @@ public class Lambda01 {//okul projesinde listele vb lamda expression ile yapiniz
         //lambda expression ile
         System.out.println("sayilar.stream().reduce(1,(a,b)-> a*b) = " +
                 sayilar.stream()
-                        .filter(Methodlarim::ciftElemaniBul)//method ref kullanildi kendi class imizda
+                        .filter(Methodlarim::ciftElemanlariSec)//method ref kullanildi kendi class imizda
                         // create ettigimiz seed methodu kulandik
                         .reduce(1, (a, b) -> a * b));
         //method referans ile
-        System.out.println(sayilar.stream().filter(Methodlarim::ciftElemaniBul)
+        System.out.println(sayilar.stream().filter(Methodlarim::ciftElemanlariSec)
                 .reduce(Math::multiplyExact));
     }
 }
