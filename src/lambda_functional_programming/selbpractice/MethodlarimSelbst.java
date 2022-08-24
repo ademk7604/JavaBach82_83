@@ -1,6 +1,6 @@
 package lambda_functional_programming.selbpractice;
 
-public class Methodlarim {//seed (tohum) methodlar create edildi
+public class MethodlarimSelbst {//seed (tohum) methodlar create edildi
     public static void ayniSatirdaBosluklaYazdir(Object str) {
 
         System.out.print(str + " "); // ayni satirda olsun diye ln sildik

@@ -24,6 +24,8 @@ public class Fp03 {
         //System.out.println(liste);
         uzunlugaGoreYazdir(liste);
         System.out.println();
+        onceSiralaSonraUzunlugaGoreYazdir(liste);
+        System.out.println();
         uzunlugaGoreTersYazdir(liste);
         System.out.println();
         sonKaraktereGoreTekrarsizSirala(liste);
@@ -57,10 +59,14 @@ public class Fp03 {
     public static void uzunlugaGoreYazdir(List<String> list) {
         list.stream().sorted(Comparator.comparing(String::length)).forEach(Utils::ayniSatirdaBosluklaYazdir); // her zaman kucukten buyuge dogal siramala ile yapar
         // sorted(Comparator.comparing()) siralama kosulunu belirtmek icin kullanilir // sadece sorted deseydik alfabetik siralama yapardi.
-        // heriki yol ile cozumu bilmekte fayda var.
+        // sorted(Comparator.comparing(String::length)), lengte gore siralar, lengt i  ayni ise list teki siralamasina gore siralama yapar.
+
+    }
+    public static void onceSiralaSonraUzunlugaGoreYazdir(List<String> list) {
+        list.stream().sorted().sorted(Comparator.comparing(String::length)).forEach(Utils::ayniSatirdaBosluklaYazdir);
     }
 
-    //3) Elemanları uzunluklarına göre ters sıralayıp yazdıran bir method oluşturun.
+        //3) Elemanları uzunluklarına göre ters sıralayıp yazdıran bir method oluşturun.
     public static void uzunlugaGoreTersYazdir(List<String> list) {
         list.
                 stream().

@@ -86,8 +86,8 @@ public class Fp02 {
     }
     //7) List elemanları arasından en büyük değeri bulan bir method oluşturun.
     public static void getMaxEleman(List<Integer> list){
-     Integer maxEleman = list.stream().distinct().reduce(Math::max).get();// burda reduce da baslangic degeri atmadanda oldu.
-        System.out.println("maxEleman = " + maxEleman);
+     Integer maxEleman = list.stream().distinct().reduce(Integer.MIN_VALUE,Math::max);// burda reduce da baslangic degeri atmadanda oldu.
+        System.out.println("maxElemanim = " + maxEleman);
     }
     //Ödev
     //8)List elemanları arasından en küçük değeri bulan bir method oluşturun.(Method Reference)
