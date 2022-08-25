@@ -1,5 +1,4 @@
 package lambda_functional_programming.lambda_parctice;
-import lambda_functional_programming.Utils;
 import lambda_functional_programming.selbpractice.MethodlarimSelbst;
 
 import java.util.*;

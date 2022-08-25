@@ -1,6 +1,6 @@
 package lambda_functional_programming.selbpractice;
 
-import lambda_functional_programming.Utils;
+import lambda_functional_programming.lambda_functional_programming01.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
