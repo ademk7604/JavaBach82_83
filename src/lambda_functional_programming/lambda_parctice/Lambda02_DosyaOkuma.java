@@ -22,11 +22,14 @@ her ikisinde de path kopyalamis oluyoruz
 cevirirken EXCEPTION OLUSMASIN DIYE => throws IOException <= EKLEMELIYIZ
 buda lines altinda kirmizi uyari veriyor uzerine tiklayinca kendiliginden oluyor
 */
-public class Lambda02_DosyaOkuma {// yolu src/lambda_practice/siirler.txt
+public class Lambda02_DosyaOkuma {
     //src/lambda_functional_programming/lambda_parctice/siirler.txt
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException { //src/lambda_functional_programming/lambda_parctice/siirler.txt
         System.out.println("\nTASK 01 --> siirler.txt dosyasini yazdiriniz -->  ");
         //1.yol
+        //dosya lara ulasmak icin bir Path interface icat edilmis. path.of(of demek dosya yolunu istiyor.) mute adinda bir ojce creat ettik.
+        // dosyanin yolunu alirsiniz of methoduna verirsiniz path interface inden faydalanarak objet creat ederiz. mute=dosya yolunu creat ettik.
+        //dosya mim yolumu java ya tanittik. olusturdugumuz mute dosya yolunu Files clasinin lines metuduna vererek istedigimiz data'yi String data tipinde Stream a donusturuyor.
         Path muti=Path.of("src/lambda_functional_programming/lambda_parctice/siirler.txt"); // siirler dosyasi muti objesine atandi
         Stream<String> akis=Files.lines(muti); // muti obj si akis obj sine atanarak Stream classinda akisa alindi.
         //files classinin lines metudu ile stream a atadik text in icinde
