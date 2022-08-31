@@ -30,8 +30,8 @@ public class Lambda02_DosyaOkuma {
         //dosya lara ulasmak icin bir Path interface icat edilmis. path.of(of demek dosya yolunu istiyor.) mute adinda bir ojce creat ettik.
         // dosyanin yolunu alirsiniz of methoduna verirsiniz path interface inden faydalanarak objet creat ederiz. mute=dosya yolunu creat ettik.
         //dosya mim yolumu java ya tanittik. olusturdugumuz mute dosya yolunu Files clasinin lines metuduna vererek istedigimiz data'yi String data tipinde Stream a donusturuyor.
-        Path muti=Path.of("src/lambda_functional_programming/lambda_parctice/siirler.txt"); // siirler dosyasi muti objesine atandi
-        Stream<String> akis=Files.lines(muti); // muti obj si akis obj sine atanarak Stream classinda akisa alindi.
+        Path muti = Path.of("src/lambda_functional_programming/lambda_parctice/siirler.txt"); // siirler dosyasi muti objesine atandi
+        Stream<String> akis = Files.lines(muti); // muti obj si akis obj sine atanarak Stream classinda akisa alindi.
         //files classinin lines metudu ile stream a atadik text in icinde
         //akis.forEach(System.out::println);
         //buyuk harfe cevirildi
@@ -52,8 +52,8 @@ public class Lambda02_DosyaOkuma {
         System.out.println("\nTASK 3  --> siirler.txt dosyasindaki ayni kelimeleri cikartarak yazdiriniz. -->  ");
         System.out.println(Files.lines(muti).
                 map(t -> t.split(" ")). // her bir kelime alindi
-                flatMap(Arrays::stream).//duz bir yapiya yani bir aary e cevrildi
-                distinct().
+                        flatMap(Arrays::stream).//duz bir yapiya yani bir aary e cevrildi
+                        distinct().
                 collect(Collectors.toList()));
 
         //2.YOL
@@ -61,7 +61,7 @@ public class Lambda02_DosyaOkuma {
 
         System.out.println("\nTASK 4 --> siirler.txt dosyasindaki tum kelimeleri natural order  yazdiriniz. -->  ");
         Files.lines(muti).
-                map(t->t.toLowerCase().
+                map(t -> t.toLowerCase().
                         split(" ")).
                 flatMap(Arrays::stream).
                 sorted().
@@ -79,7 +79,7 @@ public class Lambda02_DosyaOkuma {
         System.out.println(Files.lines(muti).
                 map(t -> t.toLowerCase().
                         split("")). //hiclikten
-                flatMap(Arrays::stream).
+                        flatMap(Arrays::stream).
                 filter(t -> t.contains("a")).count());
 
         System.out.println("\nTASK 7 --> siirler.txt dosyasinda a harfi gecen kelimeler yazdiriniz. -->  ");
@@ -103,6 +103,7 @@ public class Lambda02_DosyaOkuma {
                 replaceAll("\\d", "").split("")).flatMap(Arrays::stream).distinct().count());
 
         System.out.println("\nTASK 9 --> siirler.txt dosyasinda kac farkli kelime kullanildigini  yazdiriniz. -->  ");
-        System.out.println("\nTASK 10 --> siirler.txt dosyasinda kac farkli kelime kullanildigini  yazdiriniz. -->  ");
+      //  Files.lines(muti).map(t -> t.toLowerCase()).
+        //System.out.println("\nTASK 10 --> siirler.txt dosyasinda kac farkli kelime kullanildigini  yazdiriniz. -->  ");
     }
 }

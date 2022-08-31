@@ -11,8 +11,16 @@ name1 degiskeninin karakter sayisi tek ise "name1 cift sayili olmadigi icin orta
          name2= ahmet
          Print ==> mehahmetmet
 */
-    String name1= "mehmet";
-    String name2= "ahmet";
+        String name1 = "mehmet";
+        String name2 = "ahmet";
+
+
+
+
+
+
+
+
 
     if(name1.length()%2==0){
         System.out.println(name1.substring(0,name1.length()/2).concat(name2)

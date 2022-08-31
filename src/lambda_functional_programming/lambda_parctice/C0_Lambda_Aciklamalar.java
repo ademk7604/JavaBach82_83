@@ -3,7 +3,7 @@ package lambda_functional_programming.lambda_parctice;
 public class C0_Lambda_Aciklamalar {
          /*
      ForEach:
-     Stream içindeki veriyi tek tek tüketmekiçin oluşturulmuş bir yapıdır.
+     Stream içindeki veriyi tek tek tüketmek için oluşturulmuş bir yapıdır.
      **Terminal işlemi olduğundan dolayı stream artık tüketilmiş olarak kabul edilir ve
      artık kullanılamayacağı anlamına gelir.
 
@@ -12,7 +12,7 @@ public class C0_Lambda_Aciklamalar {
     Dizimiz veya Collection’ımız üzerinde bizim belirteceğimiz koşullar doğrultusunda
     filtreleme işlemi yapmamıza yarayan bir yapıdır.
     Bu işlem sonrası belirttiğimiz koşula uygun olmayan elemanlar bir sonraki aşamada kullanılamazlar.
-    Artık elimizde filtrelenmiş/süzülmüş/elenmiş bir veri vardır
+    Artık elimizde filtrelenmiş/süzülmüş/elenmiş bir veri vardır.
 
 
     Collect:
@@ -21,7 +21,7 @@ public class C0_Lambda_Aciklamalar {
 
 
     Map :Stream içerisinde erişilen her bir eleman üzerinde işlem yapmamıza
-    ve başka elemanlara dönüştürmemize imkan sağlayan
+    ve başka elemanlara dönüştürmemize imkan sağlayar
 
 
     Distinct:
@@ -54,14 +54,14 @@ public class C0_Lambda_Aciklamalar {
     değerlendirerek sonucu yansıtmasıdır. Match operasyonunun 3 çeşit kullanımı bulunmaktadır;
 
         AnyMath: Vereceğimiz şarta bağlı olarak Stream içerisinde gezinir ve
-        herhangi bir elemanla eşleşme durumunda true dönecektir.
+        HERHANGI bir elemanla eşleşme durumunda true dönecektir.
 
 
-        AllMatch: Verilen şarta göre Stream içerisindeki tüm elemanların
+        AllMatch: Verilen şarta göre Stream içerisindeki TUM ELEMANLARIN
         bu şarta uyması durumunda true dönecektir.
 
 
-        NoneMatch: Şarta göre Stream içindeki hiç bir
+        NoneMatch: Şarta göre Stream içindeki HIC BIR
         elemanın şartı sağlamaması durumunda true dönecektir.
 
 
@@ -123,8 +123,9 @@ public class C0_Lambda_Aciklamalar {
     yararlı azaltma işlemlerini uygulayan Collector Uygulamaları.
 
     // dosya eklemek icin 2 yol var
-    1) Files.lines(Path.of("path")   buradan stream e eklemek icin
-    Stream <String> satir=Files.lines(Path.of("dosya pathi"));
+    1) Files.lines(Path.of("path")   buradan stream e eklemek icin. Files class'ında lines method'u kullanarak
+    url (dosya yolunu) path'a atıyor. Alttaki satir nesnesine tanımlayarak stream olarak kullanmamızı sağlar
+
      bu bize tekrardan stream tanimlamadan kullanmayi saglar
     2) //Files.lines(Paths.get("dosya pathi")).  kullanilir
 
