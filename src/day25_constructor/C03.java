@@ -6,7 +6,8 @@ public class C03 {
     olusturup bunlari baska classlardan kullanmak icin olusturulur.
     (run yok main olmadigi icin bizim kaliphanemiz burasi
     ogretmen demistik onunla ilgili tum ozellikleri olusturup oraya koyarim
-    isim veriable onunla ilgi hersey i olrda kullaniriz) */
+    isim veriable onunla ilgi hersey i olrda kullaniriz)
+    */
     /*
     Default constructor, parametresizdir goremezsek bile ihtiyac oldugunda calisir
      Class icerisinde parametreli veya parametresiz herhangi bir constructor olusturursak

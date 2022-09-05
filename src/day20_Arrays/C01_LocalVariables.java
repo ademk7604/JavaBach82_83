@@ -9,7 +9,7 @@ public class C01_LocalVariables {
         }
         //System.out.println(i); i loop'da olusturulmus local variable'dir. kirmizi cizer
         //sadece loop icerisinde kullanilabilir.
-        //static int sayiStatic=20; static kelimesini cizdi. sadece class level da kullanilabilir.
+        //static int sayiStatic=20; //static kelimesini cizdi. sadece class level da kullanilabilir.
         //method'larin icerisinde static variable TANIMLANAMAZ.
 
     }

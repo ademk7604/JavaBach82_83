@@ -8,10 +8,10 @@ public class C03_PassByValue {
         double satisFiyati=100;
         double indirimOrani=60;
         double indirimliFiyat= indirimliFiyatHesapla(satisFiyati,indirimOrani);
-        System.out.println("indirimli fiyat : " + indirimliFiyat);
-        System.out.println("indirimli fiyat : " + indirimliFiyat);
-        System.out.println("indirimli fiyat : " + indirimliFiyat);
-        System.out.println("indirimli fiyat : " + indirimliFiyat);
+        System.out.println("indirimli fiyat : " + indirimliFiyat); //40.0
+        System.out.println("indirimli fiyat : " + indirimliFiyat); //40.0
+        System.out.println("indirimli fiyat : " + indirimliFiyat); //40.0
+        System.out.println("indirimli fiyat : " + indirimliFiyat); //40.0
     }
     public static double indirimliFiyatHesapla(double satisFiyati,double indirimOrani) {
         double indirimliFiyat=satisFiyati*(1-indirimOrani/100);

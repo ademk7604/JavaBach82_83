@@ -1,11 +1,13 @@
 package day34_inheritance;
 
 public class Personel {
+
     /*
-    Eger parent class olacak sekilde tasarladiginiz bir clss varsa
+    Eger parent class olacak sekilde tasarladiginiz bir class varsa
     veya ilerde bu class i parent yapacaklar olabilir
     o zaman veriable ve method larin access modifier ini protected
      */
+
     // genel olmasini istiyorum
     protected int persNo;
     protected String isim="Isim belirtilmedi";

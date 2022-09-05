@@ -5,7 +5,7 @@ public class OgretmenRunner {
 
         Ogretmen ogretmen1=new Ogretmen(); // parametresizden
         System.out.println("Ogretmen 1 " + ogretmen1);
-
+        System.out.println("ogretmen1 toString= " + ogretmen1.toString());
         Ogretmen ogretmen2=new Ogretmen("Emre","Akdogan","1/1/2001","Matematik","Fizik");
         System.out.println("Ogretmen 2 " + ogretmen2);
 
