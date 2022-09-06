@@ -1,6 +1,6 @@
 package day22_multiDimensionalArrays;
 
-public class C10_ElemanlarinCarpimi {
+public class C10_Elemanlarin_Carpimi {
     public static void main(String[] args) {
 
         //Alttaki multi dimesinoal Array'in butun elemanlarinin carpimini bulun
