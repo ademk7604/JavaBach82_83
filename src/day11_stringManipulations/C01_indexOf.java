@@ -9,7 +9,7 @@ public class C01_indexOf {
         System.out.println(str.indexOf('g')); // 6
         System.out.println(str.indexOf("r")); //7
         System.out.println(str.indexOf("j")); // -1
-
+        System.out.println();
         System.out.println(str.indexOf("mek")); // 10
 
         // eger istedigimiz index den sonrasini kontrol etnek istersek
