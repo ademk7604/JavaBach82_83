@@ -34,6 +34,7 @@ public class C01_indexOf {
                 System.out.println("verilen str'de 3. e yok");
             } else {
                 System.out.println("verilen str'daki 3.e nin index'i : " + ucuncuE);
+
             }
         }
     }
